@@ -12,15 +12,46 @@
     width: 80vw;
     height: 95vh;
 
-    border: 2px solid white;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 5fr 45% 4fr 1fr;
 
-    grid-template-columns: 1fr 200px;
-    grid-template-rows: 200px 1fr 180px 40px;
+    grid-gap: 5px;
 
     #header-container {
 
         grid-column: 1 e("/") 3;
-        background: red;
+        border: 3px solid white;
+
+        header {
+
+            display: flex;
+            flex-flow: column;
+
+            height: 100%;
+
+            .header-top {
+
+                flex: 0 1 50px;
+                background: red;
+
+                h1 {
+
+                    margin: 0;
+                    padding: 6px 20px;
+
+                    color: white;
+
+                }
+
+            }
+
+            .header-down {
+
+                flex: 1 1;
+
+            }
+
+        }
 
     }
 
@@ -28,26 +59,28 @@
 
         grid-column: 2 e("/") 3;
         grid-row: 2 e("/") 4;
-        background: blue;
+        
+        border: 3px solid white;
 
     }
 
     #footer-container {
 
         grid-column: 1 e("/") 3;
-        background: orange;
+        
+        border: 3px solid white;
 
     }
 
     #section-container {
 
-        background: pink;
+        border: 3px solid white;
 
     }
 
     #article-container {
 
-        background: brown;
+        border: 3px solid white;
 
     }
 
