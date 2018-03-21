@@ -5,6 +5,20 @@
     transform: translate(-50%,-50%);
 }
 
+.header {
+
+    font-size: 1.8em;
+
+    margin: 5px 0;
+
+}
+
+.white {
+
+    color: white;
+
+}
+
 #main-container{
 
     display: grid;
@@ -139,6 +153,44 @@
 
         border: 3px solid white;
 
+        section {
+
+            margin: 12px;
+
+            .news-container {
+
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 5px;
+
+                height: 100px;
+
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                .news {
+
+                    height: 150px;
+
+                    p.title {
+
+                        color: yellow;
+                        font-weight: 600;
+
+                    }
+
+                    p {
+
+                        color: white;
+
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
     #article-container {
@@ -149,14 +201,7 @@
 
         article {
 
-            margin: 15px;
-
-            h1 {
-
-                font-size: 2em;
-                margin: 5px 0;
-
-            }
+            margin: 12px;
 
         }
 
