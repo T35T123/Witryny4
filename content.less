@@ -19,6 +19,20 @@
 
 }
 
+.bold {
+
+    font-weight: 600;
+
+}
+
+.vertical-center {
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
 #main-container{
 
     display: grid;
@@ -146,6 +160,55 @@
         grid-column: 1 e("/") 3;
         
         border: 3px solid white;
+
+        footer {
+
+            width: inherit;
+            height: 100%;
+
+            .footer-flex {
+
+                display: flex;
+                flex-flow: row;
+
+                height: inherit;
+
+                .copyright {
+
+                    flex: 1 1;
+                    position: relative;
+
+                    span {
+
+                        margin-left: 20px;
+
+                    }
+
+                }
+
+                a.nav-element {
+
+                    flex: 0 1 100px;
+                    position: relative;
+
+                    span {
+
+                        width: 100%;
+                        text-align: center;
+
+                    }
+
+                    :hover {
+
+                        text-decoration: underline;
+
+                    }
+
+                }
+
+            }
+
+        }
 
     }
 
