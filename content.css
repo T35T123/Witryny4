@@ -46,10 +46,11 @@
   margin: 0;
   padding: 6px 20px;
   color: white;
-  flex: 0 1 50%;
+  flex: 0 1 40%;
 }
 #background #main-container #header-container header .header-top nav {
   flex: 1 1;
+  position: relative;
 }
 #background #main-container #header-container header .header-top nav .navbar-container {
   width: 100%;
