@@ -1,13 +1,15 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 #background {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
+  min-height: 780px;
 }
 #background #top {
   flex: 0 1 25vh;

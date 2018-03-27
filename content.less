@@ -33,85 +33,176 @@
 
 }
 
-#main-container{
+#background {
 
-    display: grid;
+    #main-container{
 
-    width: 80vw;
-    height: 95vh;
+        display: grid;
 
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 5fr 40% 4fr 1fr;
+        width: 80vw;
+        height: 95%;
 
-    grid-gap: 5px;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 5fr 40% 4fr 1fr;
 
-    #header-container {
+        grid-gap: 5px;
 
-        grid-column: 1 e("/") 3;
-        border: 3px solid white;
+        #header-container {
 
-        header {
+            grid-column: 1 e("/") 3;
+            border: 3px solid white;
 
-            display: flex;
-            flex-flow: column;
-
-            height: 100%;
-
-            .header-top {
+            header {
 
                 display: flex;
-                flex-flow: row;
-                flex: 0 1 50px;
+                flex-flow: column;
 
-                position: relative;
+                height: 100%;
 
-                h1 {
+                .header-top {
 
-                    margin: 0;
-                    padding: 6px 20px;
+                    display: flex;
+                    flex-flow: row;
+                    flex: 0 1 50px;
 
-                    color: white;
+                    position: relative;
 
-                    flex: 0 1 50%;
+                    h1 {
 
-                }
+                        margin: 0;
+                        padding: 6px 20px;
 
-                nav {
+                        color: white;
 
-                    flex: 1 1;
+                        flex: 0 1 50%;
 
-                    .navbar-container {
+                    }
 
-                        width: 100%;
-                        height: 100%;
+                    nav {
 
-                        display: flex;
-                        flex-flow: row;
+                        flex: 1 1;
 
-                        a {
+                        .navbar-container {
 
-                            flex: 1 1;
-                            text-decoration: none;
+                            width: 100%;
+                            height: 100%;
 
-                            position: relative;
-                            
-                            div {
-                             
-                                font-size: 1.3em;
-                                text-align: center;
+                            display: flex;
+                            flex-flow: row;
 
-                                color: white;
+                            a {
 
-                                width: 100%;
+                                flex: 1 1;
+                                text-decoration: none;
+
+                                position: relative;
+                                
+                                div {
+                                
+                                    font-size: 1.3em;
+                                    text-align: center;
+
+                                    color: white;
+
+                                    width: 100%;
+
+                                }
+
+                            }
+
+                            a:hover {
+
+                                transition: .4s all linear;
+                                background: rgba(0, 0, 0, 0.329);
 
                             }
 
                         }
 
-                        a:hover {
+                    }
 
-                            transition: .4s all linear;
-                            background: rgba(0, 0, 0, 0.329);
+                }
+
+                .header-down {
+
+                    flex: 1 1;
+                    
+                    background: white;
+
+                    position: relative;
+
+                    .background {
+
+                        width: calc(100% e("-") 10px);
+                        height: calc(100% e("-") 10px);
+
+                        background: url("https://d-pt.ppstatic.pl/kadry/k/r/1/75/f8/55d00ddfcfa63_o,size,969x565,q,71,h,a035e6.jpg");
+                        background-size: cover;
+                        background-position-y: 50%;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        #aside-container {
+
+            grid-column: 2 e("/") 3;
+            grid-row: 2 e("/") 4;
+            
+            border: 3px solid white;
+
+        }
+
+        #footer-container {
+
+            grid-column: 1 e("/") 3;
+            
+            border: 3px solid white;
+
+            footer {
+
+                width: inherit;
+                height: 100%;
+
+                .footer-flex {
+
+                    display: flex;
+                    flex-flow: row;
+
+                    height: inherit;
+
+                    .copyright {
+
+                        flex: 1 1;
+                        position: relative;
+
+                        span {
+
+                            margin-left: 20px;
+
+                        }
+
+                    }
+
+                    a.nav-element {
+
+                        flex: 0 1 100px;
+                        position: relative;
+
+                        span {
+
+                            width: 100%;
+                            text-align: center;
+
+                        }
+
+                        :hover {
+
+                            text-decoration: underline;
 
                         }
 
@@ -121,86 +212,43 @@
 
             }
 
-            .header-down {
-
-                flex: 1 1;
-                
-                background: white;
-
-                position: relative;
-
-                .background {
-
-                    width: calc(100% e("-") 10px);
-                    height: calc(100% e("-") 10px);
-
-                    background: url("https://d-pt.ppstatic.pl/kadry/k/r/1/75/f8/55d00ddfcfa63_o,size,969x565,q,71,h,a035e6.jpg");
-                    background-size: cover;
-                    background-position-y: 50%;
-
-                }
-
-            }
-
         }
 
-    }
+        #section-container {
 
-    #aside-container {
+            border: 3px solid white;
 
-        grid-column: 2 e("/") 3;
-        grid-row: 2 e("/") 4;
-        
-        border: 3px solid white;
+            section {
 
-    }
+                margin: 12px;
 
-    #footer-container {
+                .news-container {
 
-        grid-column: 1 e("/") 3;
-        
-        border: 3px solid white;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-gap: 5px;
 
-        footer {
+                    height: 100px;
 
-            width: inherit;
-            height: 100%;
+                    overflow-y: auto;
+                    overflow-x: hidden;
 
-            .footer-flex {
+                    .news {
 
-                display: flex;
-                flex-flow: row;
+                        height: 150px;
 
-                height: inherit;
+                        p.title {
 
-                .copyright {
+                            color: yellow;
+                            font-weight: 600;
 
-                    flex: 1 1;
-                    position: relative;
+                        }
 
-                    span {
+                        p {
 
-                        margin-left: 20px;
+                            color: white;
 
-                    }
-
-                }
-
-                a.nav-element {
-
-                    flex: 0 1 100px;
-                    position: relative;
-
-                    span {
-
-                        width: 100%;
-                        text-align: center;
-
-                    }
-
-                    :hover {
-
-                        text-decoration: underline;
+                        }
 
                     }
 
@@ -210,61 +258,17 @@
 
         }
 
-    }
+        #article-container {
 
-    #section-container {
+            border: 3px solid white;
+            overflow-y: auto;
+            color: white;
 
-        border: 3px solid white;
+            article {
 
-        section {
-
-            margin: 12px;
-
-            .news-container {
-
-                display: grid;
-                grid-template-columns: 50% 50%;
-                grid-gap: 5px;
-
-                height: 100px;
-
-                overflow-y: auto;
-                overflow-x: hidden;
-
-                .news {
-
-                    height: 150px;
-
-                    p.title {
-
-                        color: yellow;
-                        font-weight: 600;
-
-                    }
-
-                    p {
-
-                        color: white;
-
-                    }
-
-                }
+                margin: 12px;
 
             }
-
-        }
-
-    }
-
-    #article-container {
-
-        border: 3px solid white;
-        overflow-y: auto;
-        color: white;
-
-        article {
-
-            margin: 12px;
 
         }
 

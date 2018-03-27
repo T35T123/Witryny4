@@ -19,114 +19,114 @@
   top: 50%;
   transform: translateY(-50%);
 }
-#main-container {
+#background #main-container {
   display: grid;
   width: 80vw;
-  height: 95vh;
+  height: 95%;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: 5fr 40% 4fr 1fr;
   grid-gap: 5px;
 }
-#main-container #header-container {
+#background #main-container #header-container {
   grid-column: 1 / 3;
   border: 3px solid white;
 }
-#main-container #header-container header {
+#background #main-container #header-container header {
   display: flex;
   flex-flow: column;
   height: 100%;
 }
-#main-container #header-container header .header-top {
+#background #main-container #header-container header .header-top {
   display: flex;
   flex-flow: row;
   flex: 0 1 50px;
   position: relative;
 }
-#main-container #header-container header .header-top h1 {
+#background #main-container #header-container header .header-top h1 {
   margin: 0;
   padding: 6px 20px;
   color: white;
   flex: 0 1 50%;
 }
-#main-container #header-container header .header-top nav {
+#background #main-container #header-container header .header-top nav {
   flex: 1 1;
 }
-#main-container #header-container header .header-top nav .navbar-container {
+#background #main-container #header-container header .header-top nav .navbar-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-flow: row;
 }
-#main-container #header-container header .header-top nav .navbar-container a {
+#background #main-container #header-container header .header-top nav .navbar-container a {
   flex: 1 1;
   text-decoration: none;
   position: relative;
 }
-#main-container #header-container header .header-top nav .navbar-container a div {
+#background #main-container #header-container header .header-top nav .navbar-container a div {
   font-size: 1.3em;
   text-align: center;
   color: white;
   width: 100%;
 }
-#main-container #header-container header .header-top nav .navbar-container a:hover {
+#background #main-container #header-container header .header-top nav .navbar-container a:hover {
   transition: .4s all linear;
   background: rgba(0, 0, 0, 0.329);
 }
-#main-container #header-container header .header-down {
+#background #main-container #header-container header .header-down {
   flex: 1 1;
   background: white;
   position: relative;
 }
-#main-container #header-container header .header-down .background {
+#background #main-container #header-container header .header-down .background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   background: url("https://d-pt.ppstatic.pl/kadry/k/r/1/75/f8/55d00ddfcfa63_o,size,969x565,q,71,h,a035e6.jpg");
   background-size: cover;
   background-position-y: 50%;
 }
-#main-container #aside-container {
+#background #main-container #aside-container {
   grid-column: 2 / 3;
   grid-row: 2 / 4;
   border: 3px solid white;
 }
-#main-container #footer-container {
+#background #main-container #footer-container {
   grid-column: 1 / 3;
   border: 3px solid white;
 }
-#main-container #footer-container footer {
+#background #main-container #footer-container footer {
   width: inherit;
   height: 100%;
 }
-#main-container #footer-container footer .footer-flex {
+#background #main-container #footer-container footer .footer-flex {
   display: flex;
   flex-flow: row;
   height: inherit;
 }
-#main-container #footer-container footer .footer-flex .copyright {
+#background #main-container #footer-container footer .footer-flex .copyright {
   flex: 1 1;
   position: relative;
 }
-#main-container #footer-container footer .footer-flex .copyright span {
+#background #main-container #footer-container footer .footer-flex .copyright span {
   margin-left: 20px;
 }
-#main-container #footer-container footer .footer-flex a.nav-element {
+#background #main-container #footer-container footer .footer-flex a.nav-element {
   flex: 0 1 100px;
   position: relative;
 }
-#main-container #footer-container footer .footer-flex a.nav-element span {
+#background #main-container #footer-container footer .footer-flex a.nav-element span {
   width: 100%;
   text-align: center;
 }
-#main-container #footer-container footer .footer-flex a.nav-element :hover {
+#background #main-container #footer-container footer .footer-flex a.nav-element :hover {
   text-decoration: underline;
 }
-#main-container #section-container {
+#background #main-container #section-container {
   border: 3px solid white;
 }
-#main-container #section-container section {
+#background #main-container #section-container section {
   margin: 12px;
 }
-#main-container #section-container section .news-container {
+#background #main-container #section-container section .news-container {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-gap: 5px;
@@ -134,21 +134,21 @@
   overflow-y: auto;
   overflow-x: hidden;
 }
-#main-container #section-container section .news-container .news {
+#background #main-container #section-container section .news-container .news {
   height: 150px;
 }
-#main-container #section-container section .news-container .news p.title {
+#background #main-container #section-container section .news-container .news p.title {
   color: yellow;
   font-weight: 600;
 }
-#main-container #section-container section .news-container .news p {
+#background #main-container #section-container section .news-container .news p {
   color: white;
 }
-#main-container #article-container {
+#background #main-container #article-container {
   border: 3px solid white;
   overflow-y: auto;
   color: white;
 }
-#main-container #article-container article {
+#background #main-container #article-container article {
   margin: 12px;
 }
