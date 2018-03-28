@@ -2,7 +2,9 @@
 
     #main-container {
 
-        width: 95vw;
+        width: calc(100vw e("-") 5px);
+
+        padding: 5px 0;
 
     }
 
@@ -68,6 +70,7 @@
                 .gallery {
 
                     order: 2;
+                    flex: 0 1 50%;
                     
                     .photos-container {
 
@@ -122,6 +125,41 @@
             }
 
         }
+
+    }
+
+    #aside-container {
+
+        aside {
+
+            flex-flow: column !important;
+            
+            .gallery {
+
+                order: 1 !important;
+                
+                .photos-container {
+
+                 height: 240px !important;
+                 grid-template-rows: 1fr 1fr;
+
+                 .photo {
+
+                    height: auto;
+
+                 }
+
+             }
+
+            }
+
+            .info {
+
+                order: 2 !important;
+
+            }
+
+         }
 
     }
 

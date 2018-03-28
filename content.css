@@ -100,7 +100,7 @@
 #main-container #aside-container aside {
   display: flex;
   flex-flow: column;
-  height: auto;
+  height: 100%;
 }
 #main-container #aside-container aside .gallery {
   flex: 0 1 40%;

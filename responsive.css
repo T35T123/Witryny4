@@ -1,6 +1,7 @@
 @media all and (max-width: 810px) {
   #main-container {
-    width: 95vw;
+    width: calc(100vw - 5px);
+    padding: 5px 0;
   }
   .header-top nav .navbar-container {
     display: none !important;
@@ -35,6 +36,7 @@
   }
   #main-container #aside-container aside .gallery {
     order: 2;
+    flex: 0 1 50%;
   }
   #main-container #aside-container aside .gallery .photos-container {
     height: 80%;
@@ -60,6 +62,22 @@
   }
   #main-container #footer-container footer .footer-flex a.nav-element {
     flex: 1 1;
+  }
+  #aside-container aside {
+    flex-flow: column !important;
+  }
+  #aside-container aside .gallery {
+    order: 1 !important;
+  }
+  #aside-container aside .gallery .photos-container {
+    height: 240px !important;
+    grid-template-rows: 1fr 1fr;
+  }
+  #aside-container aside .gallery .photos-container .photo {
+    height: auto;
+  }
+  #aside-container aside .info {
+    order: 2 !important;
   }
 }
 .hamburger-menu {
