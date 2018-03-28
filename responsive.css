@@ -45,7 +45,7 @@
 }
 @media all and (max-width: 585px) {
   #main-container {
-    grid-template-rows: 190px 40% 4fr 200px 200px;
+    grid-template-rows: 190px 40% 4fr auto 200px;
   }
   #main-container #footer-container footer .footer-flex {
     flex-flow: column;
