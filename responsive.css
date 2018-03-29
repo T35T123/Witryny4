@@ -85,6 +85,9 @@
   .navbar-container-responsive {
     visibility: hidden !important;
   }
+  body {
+    overflow-y: auto !important;
+  }
 }
 .hamburger-menu {
   visibility: hidden;
@@ -110,4 +113,7 @@
   vertical-align: middle;
   text-decoration: none;
   z-index: 2;
+}
+.scroll-block {
+  overflow-y: hidden;
 }

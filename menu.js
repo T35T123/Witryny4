@@ -21,6 +21,7 @@
         const openIcon = document.getElementById("open");
         openIcon.addEventListener("click", () => {
             menu.className = className;
+            document.body.className = "scroll-block";
         });
 
     };
@@ -30,6 +31,7 @@
         const closeIcon = document.getElementById("close");
         closeIcon.addEventListener("click", () => {
             menu.className = className + " disabled";
+            document.body.className = "";
         });
 
     };
