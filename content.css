@@ -23,6 +23,33 @@
   color: yellow !important;
   font-weight: 600;
 }
+.navbar-container-responsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, limegreen, green);
+  display: flex;
+  flex-flow: column;
+  z-index: 1;
+  visibility: hidden;
+}
+.navbar-container-responsive a {
+  flex: 1 1;
+  text-decoration: none;
+  position: relative;
+}
+.navbar-container-responsive a div {
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.navbar-container-responsive a:hover {
+  transition: .4s all linear;
+  background: rgba(0, 0, 0, 0.329);
+}
 #main-container {
   display: grid;
   width: 80vw;
@@ -64,6 +91,7 @@
   height: 100%;
   display: flex;
   flex-flow: row;
+  position: absolute;
 }
 #main-container #header-container header .header-top nav .navbar-container a {
   flex: 1 1;

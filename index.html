@@ -7,10 +7,29 @@
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="content.css">
     <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,400,700,800|Material+Icons&amp;subset=latin-ext" rel="stylesheet">
+    <script src="menu.js"></script>
     <title>Bieszczady</title>
 </head>
 <body>
             <div id="background-part"></div>
+            <div class="navbar-container-responsive disabled" id="menu">
+                <a href="">
+                    <div class="center">Strona główna</div>
+                </a>
+                <a href="">
+                    <div class="center">Historia</div>
+                </a>
+                <a href="">
+                    <div class="center">Katalog firm</div>
+                </a>
+                <a href="">
+                    <div class="center">Forum</div>
+                </a>
+                <a class="hamburger-menu-close material-icons nav--hamburger" href="#" id="close">
+                    close  
+                  </a>
+            </div>
             <div id="main-container" class="center">
                 <div id="header-container">
                     <header>
@@ -31,9 +50,9 @@
                                             <div class="center">Forum</div>
                                         </a>
                                     </div>
-                                    <div class="hamburger-menu">
-                                        
-                                    </div>
+                                    <a class="hamburger-menu material-icons nav--hamburger" href="#" id="open">
+                                      menu  
+                                    </a>
                                 </nav>
                         </div>
                         <div class="header-down">
