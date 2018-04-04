@@ -38,6 +38,9 @@
   #main-container #footer-container {
     grid-area: footer;
   }
+  .figure-container {
+    width: 30% !important;
+  }
 }
 @media all and (max-width: 585px) {
   #main-container {
@@ -79,6 +82,9 @@
   }
   .hamburger-menu {
     visibility: visible !important;
+  }
+  .figure-container {
+    width: 45% !important;
   }
 }
 @media all and (min-width: 586px) {
